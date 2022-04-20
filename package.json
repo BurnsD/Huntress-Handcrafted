@@ -7,13 +7,9 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "apollo-server-express": "^3.6.7",
-    "express": "^4.17.3",
     "graphql": "^16.3.0",
-<<<<<<< HEAD
     "mongoose": "^6.3.0",
-=======
     "express": "^4.17.3",
->>>>>>> develop
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
