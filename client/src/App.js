@@ -10,11 +10,6 @@ import Success from './pages/Success';
 
 function App() {
   return (
-<<<<<<< HEAD
-    <div>
-
-    </div>
-=======
     <ApolloProvider client={client}>
     <Router>
       <div>
@@ -30,7 +25,6 @@ function App() {
       </div>
     </Router>
   </ApolloProvider>
->>>>>>> merge/test
   );
 }
 
