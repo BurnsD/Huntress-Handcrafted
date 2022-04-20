@@ -4,7 +4,6 @@ const SoapSchema = new Schema({
     soapName: {
         type: String
     },
-    image
     soapPrice: {
         type: Number
     },
