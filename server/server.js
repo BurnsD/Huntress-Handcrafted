@@ -13,8 +13,10 @@ app.use(images, express.static())
 
 app.use(require('./routes'));
 
-
 app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
-
-app.listen(PORT, () => console.log(`connected on localhost:${PORT}`));
+db.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+    });
+  });
