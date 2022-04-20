@@ -1,21 +1,20 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const patrh = require('path');
+
+const db = require('./config/connection')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
-  useFindAndModify: false,
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-
-mongoose.set('debug', true);
+app.use(imagelocaiton, express.static())
 
 app.use(require('./routes'));
+
+
+app.use('/images', express.static(path.join(__dirname, '../client/images')));
+
 
 app.listen(PORT, () => console.log(`connected on localhost:${PORT}`));
