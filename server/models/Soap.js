@@ -1,12 +1,27 @@
 const { Schema,model } = require('mongoose');
 
 const SoapSchema = new Schema({
-    soapName: {
+    name: {
+        type: String,
+        required: true,
+        trim: true
+        },
+    description: {
         type: String
-    },
-    soapPrice: {
-        type: Number
-    },
+      },
+      image: {
+        type: String
+      },
+    price: {
+        type: Number,
+        required: true,
+        min: .01
+        },
+    quantitiy: {
+        type: Number,
+        min: 0, 
+        default: 0
+        },
     ingredients: []
 })
 
