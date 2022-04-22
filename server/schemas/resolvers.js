@@ -1,5 +1,4 @@
-const { Soap, Order } = require('../models');
-
+const { User } = require('../models')
 const resolvers = {
     Query: {
       helloWorld: () => {
