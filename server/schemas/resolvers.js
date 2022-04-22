@@ -1,4 +1,4 @@
-const { Soap, Order } = require('../models');
+const { Soap, Order } = require('../models/index');
 
 const resolvers = {
     Query: {
