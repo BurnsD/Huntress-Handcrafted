@@ -16,6 +16,9 @@ const startServer = async () => {
     // New Apollo requires an asynchronous server initialization to work
     await server.start();
 
+    // integrate our Apollo server with the Express application as middleware
+    server.applyMiddleware({ app });
+
     // Playground url
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
 };
