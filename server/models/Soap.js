@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const { Schema } = require('mongoose');
+
+const { Schema,model } = require('mongoose');
 
 const SoapSchema = new Schema({
     name: {
