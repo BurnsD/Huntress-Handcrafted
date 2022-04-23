@@ -4,9 +4,10 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
+
+} from 'apollo-client';
+import { createHttpLink } from 'apollo-link-http';
+import { setContext } from 'apollo-link-context';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
